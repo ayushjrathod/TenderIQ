@@ -1,0 +1,17 @@
+streamlit
+langchain
+langchain-groq
+validators
+unstructured
+youtube-transcript-api
+fastapi
+uvicorn
+python-multipart
+langchain_community
+ipykernel
+pytesseract
+pdf2image
+pypdf
+python-dateutil
+transformers
+sentence-transformers
