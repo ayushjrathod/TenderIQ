@@ -17,7 +17,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             <div className="container mx-auto flex h-14 items-center justify-between">
               <Link href="/" className="flex items-center space-x-2">
                 <Button className="text-2xl font-bold" variant="ghost">
-                  TenderIQ
+                  Construction - TenderIQ
                 </Button>
               </Link>
               <div className="flex items-center space-x-4">

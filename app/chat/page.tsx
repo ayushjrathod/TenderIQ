@@ -1,6 +1,5 @@
 "use client";
 
-import { BackgroundBeams } from "@/components/ui/background-beams";
 import { ScrollArea } from "@/components/ui/scroll-area";
 import { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger } from "@/components/ui/tooltip";
 import { cn } from "@/lib/utils";
@@ -42,7 +41,7 @@ function Citation({ chunk, index }: { chunk: { text: string; similarity: number 
             <div className="p-2 space-y-2">
               <div className="flex justify-between items-center sticky top-0 bg-white border-b border-zinc-100 pb-2">
                 <span className="text-xs font-medium text-zinc-900">Source {index + 1}</span>
-                <span className="text-xs text-zinc-500">Similarity: {(chunk.similarity * 100).toFixed(1)}%</span>
+                <span className="text-xs text-zinc-500">Similarity: {chunk.similarity.toFixed(1)}%</span>
               </div>
               <p className="text-sm text-zinc-700 whitespace-pre-wrap">{chunk.text}</p>
             </div>
@@ -255,28 +254,7 @@ function ChatBotContent() {
           </div>
         </form>
       </div>
-      <BackgroundBeams />
+      {/* <BackgroundBeams /> */}
     </div>
   );
 }
-
-// Add this CSS to your global.css file or create a style block in your layout
-const styles = `
-  .custom-scrollbar {
-    scrollbar-width: thin;
-    scrollbar-color: #e4e4e7 transparent;
-  }
-
-  .custom-scrollbar::-webkit-scrollbar {
-    width: 6px;
-  }
-
-  .custom-scrollbar::-webkit-scrollbar-track {
-    background: transparent;
-  }
-
-  .custom-scrollbar::-webkit-scrollbar-thumb {
-    background-color: #e4e4e7;
-    border-radius: 3px;
-  }
-`;

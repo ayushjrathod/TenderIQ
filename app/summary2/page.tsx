@@ -7,7 +7,7 @@ import { FileText, Layers } from "lucide-react";
 import dynamic from "next/dynamic";
 import { useState } from "react";
 import ReactMarkdown from "react-markdown";
-import summaryData from "../../python-api/Summary.json";
+import summaryData from "../../python-api/Summary2.json";
 
 const PDFViewer = dynamic(() => import("@/components/PDFViewer"), {
   ssr: false,
